@@ -1,4 +1,4 @@
-{{#include ../include/header09.md}}
+{{#include ../include/header013.md}}
 
 # Keyboard Input
 
@@ -18,20 +18,20 @@ Note: Command Key on Mac corresponds to the Super/Windows Key on PC.
 
 Most commonly, you might be interested in specific known keys and detecting when
 they are pressed or released. You can check specific [Key Codes or Scan
-Codes](#key-codes-and-scan-codes) using the
-[`Input<KeyCode>` / `Input<ScanCode>`][bevy::Input] [resources][cb::res].
+Codes](#key-codes-and-scan-codes) using the [`ButtonInput`]
+[resources][cb::res].
 
 ```rust,no_run,noplayground
-{{#include ../code/examples/input.rs:keyboard-input}}
+{{#include ../code013/examples/input.rs:keyboard-input}}
 ```
 
 ## Keyboard Events
 
 To get all keyboard activity, you can use
-[`KeyboardInput`][bevy::KeyboardInput] [events][cb::event]:
+[`KeyboardInput`] [events][cb::event]:
 
 ```rust,no_run,noplayground
-{{#include ../code/examples/input.rs:keyboard-events}}
+{{#include ../code013/examples/input.rs:keyboard-events}}
 ```
 
 These events give you both the Key Code and Scan Code.
